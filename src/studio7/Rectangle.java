@@ -34,17 +34,18 @@ public class Rectangle {
 	public double areaCal() {
 		return this.length * this.width;
 	}
+
 	public double pCal() {
-		return 2*(this.length + this.width);
+		return 2 * (this.length + this.width);
 	}
+
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner in = new Scanner(System.in);
-	Rectangle r1=new Rectangle(3, 4);
-	System.out.println(r1.areaCal());
-	r1.setLength(6);
-	r1.setWidth(5);
-	System.out.println(r1.pCal());
-			}
-
+		Rectangle r1 = new Rectangle(3, 4);// 创建一个新的长方形
+		System.out.println(r1.areaCal());
+		r1.setLength(6);// 重新set那个长方形的length
+		r1.setWidth(5);// 重新set那个长方形的width
+		System.out.println(r1.pCal());
+	}
 }
